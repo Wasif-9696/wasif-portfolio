@@ -5,6 +5,23 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Wasif Hussain | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Download button styling added inline so it takes effect immediately */
+    .download-btn{
+      display:inline-block;
+      padding:12px 20px;
+      background:#0b76ff;
+      color:#fff;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      box-shadow:0 6px 18px rgba(11,118,255,0.18);
+      transition:transform .12s ease,opacity .12s ease;
+    }
+    .download-btn:hover{opacity:.95;transform:translateY(-2px)}
+    .resume-center{display:flex;align-items:center;gap:20px}
+    .resume-center img{max-width:120px;border-radius:8px}
+  </style>
 </head>
 <body>
   <header>
@@ -57,7 +74,10 @@
           <small>EDUCATION</small>
           <h3>B.Tech CSE — AI &amp; ML</h3>
           <p>Lovely Professional University — currently in 2nd year</p>
-          <p><a class="download-btn" href="/wport.pdf" download="Wasif-Portfolio.pdf">Download my CV (PDF)</a></p>
+          <div class="resume-center">
+            <p><a class="download-btn" href="/wport.pdf" download="Wasif-Portfolio.pdf">Download my CV (PDF)</a></p>
+            <img src="wasif-photo.jpg" alt="Wasif photo small">
+          </div>
         </article>
         <article>
           <small>CONTACT</small>
